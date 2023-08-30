@@ -1,0 +1,143 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+select {
+  appearance: none;
+  outline: black;
+  background-color: wheat;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.main-container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./pexels-photo-8327971.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1890FF;
+}
+
+.current-time {
+  font-size: 2rem;
+  color: black;
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(230, 13, 13, 0.918);
+  font-weight: bold;
+  color: wheat;
+  font-size: xx-medium;
+}
+
+button#submitButton:focus, button#submitButton:hover {
+  box-shadow: #e58f51 0px 3px 6px 0px;
+}
+
+button.btn.delete-alarm:hover {
+    box-shadow: black 0px 3px 6px 0px;
+}
+
+.time {
+  color: #0E141B;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page-title {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+
+  .main-container {
+    padding-block: 2rem;
+  }
+
+  .clock-container {
+    justify-content: center;
+    border-radius: 50px;
+    width: 450px;
+    min-height: auto;
+    border: 3px solid;
+    background-color: floralwhite;
+    opacity: 0.8;
+  }
+}
