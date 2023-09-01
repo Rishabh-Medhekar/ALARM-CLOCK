@@ -1,4 +1,4 @@
-https://rishabh-medhekar.github.io/
+# https://rishabh-medhekar.github.io/alarm-app/
 
 
 # Alarm-Clock using Vanilla JavaScript
